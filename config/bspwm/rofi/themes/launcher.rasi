@@ -18,8 +18,8 @@ configuration {
 }
 
 window {
-    border: 						3px;
-    border-color: 					#171717;
+    border: 						0px;
+    border-color: 					#b2996e;
     border-radius: 					0px;
     width: 							320px;
     height: 						0px;
@@ -76,7 +76,7 @@ inputbar {
 
 mainbox {
     border: 						5px;
-    border-color: 					#2B2B2D;
+    border-color: 					#38393A;
     spacing: 						15px;
     padding: 						30px;
 }
@@ -114,10 +114,10 @@ element normal.active {
     text-color:       				@on;
 }
 element selected.normal {
-    background-color: 				@selected;
+    background-color: 				#af5f5f;
     text-color:       				@foreground;
     border: 						0px;
-    border-radius: 					8px;
+    border-radius: 					0px;
     border-color: 					@selected;
 }
 element selected.urgent {
@@ -125,7 +125,7 @@ element selected.urgent {
     text-color:       				@off;
 }
 element selected.active {
-    background-color: 				@background;
+    background-color: 			    #af5f5f;
     text-color:       				@selected;
 }
 element alternate.normal {

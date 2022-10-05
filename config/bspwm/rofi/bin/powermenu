@@ -22,6 +22,12 @@ lock="로크"
 suspend="잠"
 logout="퇴거하다"
 
+#shutdown="Shutdown"
+#reboot="Reboot"
+#lock="Lock"
+#suspend="Sleep"
+#logout="Logout"
+
 # Variable passed to rofi
 options="$shutdown\n$reboot\n$lock\n$suspend\n$logout"
 _msg="Options  -  yes / y / no / n"

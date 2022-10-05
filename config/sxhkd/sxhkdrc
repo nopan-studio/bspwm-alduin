@@ -98,7 +98,8 @@ super + bracket{left,right}
 
 # focus the last node/desktop
 super + {grave,Tab}
-	bspc {node,desktop} -f last
+    bspc node @/ -C {forward,backward}
+
 
 # focus the older or newer node in the focus history
 super + {o,i}
@@ -166,11 +167,11 @@ XF86AudioMute
 
 # Brightness up
 XF86MonBrightnessUp
-  xbacklight -inc 5
+	~/.config/bspwm/scripts/brightness-inc.sh
 
 # And brightness down
 XF86MonBrightnessDown
-  xbacklight -dec 5
+	~/.config/bspwm/scripts/brightness-dec.sh
 
 # Screenshot
 Print

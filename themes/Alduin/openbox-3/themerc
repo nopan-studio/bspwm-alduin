@@ -121,10 +121,10 @@ osd.border.width: 2
 osd.hilight.bg: Solid Flat
 osd.hilight.bg.color: #af5f5f
 osd.unhilight.bg: flat solid
-osd.unhilight.bg.color: #272727
+osd.unhilight.bg.color: #171717
 
 osd.button.unpressed.bg: flat border
-osd.button.unpressed.bg.color: #212121
+osd.button.unpressed.bg.color: #171717
 #osd.button.unpressed.*.border.color: #dfdfaf
 
 osd.button.pressed.bg: flat border
@@ -133,7 +133,7 @@ osd.button.pressed.bg.color: #af5f5f
 
 osd.button.focused.bg: flat solid border
 osd.button.focused.bg.color: #dfdfaf
-#osd.button.focused.*.border.color: #272727
+#osd.button.focused.*.border.color: #171717
 
 osd.button.focused.box.color: #af5f5f
 
@@ -146,9 +146,9 @@ menu.title.text.font:shadow=n
 
 
 # Everything else
-border.width: 0
+border.width: 5
 padding.width: 8
-padding.height: 0
+padding.height: 5
 window.handle.width: 0
 window.client.padding.width: 0
 window.label.text.justify: center

@@ -1,3 +1,5 @@
+/* Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com> */
+/* Everyone is permitted to copy and distribute copies of this file under GNU-GPL3 */
 
 configuration {
     show-icons:                     false;
@@ -5,48 +7,106 @@ configuration {
     drun-display-format:            "{name}";
     disable-history:                false;
 	click-to-exit: 					true;
-    location:                       4;
+    location:                       3;
 }
 
 @import "new_colors.rasi"
 
+/* Line Responsible For Button Layouts */
+/* BUTTON = TRUE */
 window {
-    transparency:                   "real";
+    border: 						0px;
+    border-color: 					#b2996e;
     background-color:               @background;
     text-color:                     @foreground;
-    border:                 	    0px;
-    border-color:                   #ffffff;
     border-radius:                  0px;
-    width:                          100%;
-    height:			                100%;
-    padding:			            30% 0% 30% 0%;
+    width:                          200px;
+    height:                         0px;
+    x-offset:                      	-15px;
+    y-offset:                       55px;
+}
+
+prompt {
+    enabled: 						true;
+	margin: 						0px 0px 0px 0px;
+	padding: 						8px;
+	background-color: 				@background-alt;
+	text-color: 					@foreground;
+    border:                  		0px 0px 0px 0px;
+    border-color:                  	@background;
+    border-radius:                  10px;
+}
+
+textbox-prompt-colon {
+	expand: 						false;
+	str: 							"";
+    border-radius:                  0px;
+    background-color:               @selected;
+    text-color:                     @background;
+    padding:                        8px 12px 8px 12px;
+	font:							"Iosevka Nerd Font 10";
+}
+
+entry {
+    background-color:               @background-alt;
+    text-color:                     @foreground;
+    placeholder-color:              @foreground;
+    expand:                         true;
+    horizontal-align:               0;
+    placeholder:                    "Search...";
+    blink:                          true;
+    border:                  		0px 0px 0px 0px;
+    border-color:                  	@background;
+    border-radius:                  0px;
+    padding:                        8px;
+}
+
+inputbar {
+	children: 						[ textbox-prompt-colon, prompt ];
+    background-color:               @background-alt;
+    text-color:                     @foreground;
+    expand:                         false;
+    border:                  		0px 0px 0px 0px;
+    border-radius:                  0px;
+    border-color:                  	@background;
+    margin:                         0px 0px 0px 0px;
+    padding:                        0px;
+    position:                       center;
+}
+
+case-indicator {
+    background-color:               @background;
+    text-color:                     @foreground;
+    spacing:                        0;
 }
 
 
 listview {
-    background-color:               #36212400;
+    background-color:               @background;
     columns:                        1;
     lines:							5;
-    spacing:                        8%;
+    spacing:                        15px;
     cycle:                          false;
     dynamic:                        true;
-    layout:                         horizontal;
+    layout:                         vertical;
+   
 }
 
 mainbox {
-    border: 			            2px 0px 2px 0px;
-    border-color: 		            #B2996E;
-    background-color:		        #362124;
-    background-image:               url("/label.png");
+    border: 						5px;
+    border-color: 					#38393A;
+    background-color:               @background;
     children:                       [ listview ];
-    spacing:                        15px;
-    padding:                        15% 0% 0% 14%;
+    spacing:                       	15px;
+    padding:                        15px;
 }
 
 element {
-    background-color:               #362124;
+    margin:                        0px 0px 0px 0px;
+    background-color:               @background;
     text-color:                     @foreground;
     orientation:                    horizontal;
+    width:                          120px;
     border-radius:                  0px;
     padding:                        12.5px 5px 10px 5px;
 }
@@ -63,17 +123,17 @@ element-icon {
 element-text {
     background-color: 				inherit;
     text-color:       				inherit;
-    font:			"Baekmuk Dotum  48";
+	font:							"IBM Plex Sans KR 12";
+    /*"IBM Plex Sans KR 15";*/
     expand:                         true;
-    horizontal-align:               0.5;
+    horizontal-align:               0;
     vertical-align:                 0.5;
     margin:                         0px;
-    text-align: center;
 }
 
 element selected {
-    background-color:               #362124;
-    text-color:                     #EBD369;
+    background-color:               #af5f5f;
+    text-color:                     @foreground;
     border:                  		0px 0px 0px 0px;
     border-radius:                  0px;
     border-color:                  	@background;
