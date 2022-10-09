@@ -8,24 +8,25 @@ super + Return
 	#xfce4-terminal
 
 # program launcher
-super + d
+super + r
 	~/.config/bspwm/rofi/bin/launcher
 
 # show open window
-super + ctrl + d
-	~/.config/bspwm/rofi/bin/window
+super + ctrl + r
+	~/.config/bspwm/rofi/bin/ssh
 
 # show ssh sesssions
-super + shift + d
-	~/.config/bspwm/rofi/bin/ssh
+super + shift + r
+	~/.config/bspwm/rofi/bin/window
+
 
 # power-menu 
 super + shift + e
-	~/.config/bspwm/rofi/bin/powermenu
+	~/config/bspwm/rofi/bin/powermenu
 
 # make sxhkd reload its configuration files:
-super + Escape
-	pkill -USR1 -x sxhkd
+#super + Escape
+#	pkill -USR1 -x sxhkd
 
 super + alt + ctrl + 1
 	~/.config/bspwm/screenlayout/laptop-screen.sh 
@@ -45,8 +46,8 @@ super + shift + m
     bspc node -n last.!automatic
 
 # quit/restart bspwm
-super + alt + {q,r}
-	bspc {quit,wm -r}
+super + alt + Escape
+	bspc wm -r
 
 # close and kill
 super + {_,shift + }q
@@ -89,7 +90,7 @@ super + {p,b,comma,period}
 	bspc node -f @{parent,brother,first,second}
 
 # focus the next/previous window in the current desktop
-super + {_,shift + }c
+super + {_,shift + } Tab
 	bspc node -f {next,prev}.local.!hidden.window
 
 # focus the next/previous desktop in the current monitor
@@ -97,7 +98,7 @@ super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
-super + {grave,Tab}
+super + shift +{d,a}
     bspc node @/ -C {forward,backward}
 
 
