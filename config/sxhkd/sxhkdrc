@@ -22,7 +22,7 @@ super + shift + r
 
 # power-menu 
 super + shift + e
-	~/config/bspwm/rofi/bin/powermenu
+	~/.config/bspwm/rofi/bin/powermenu
 
 # make sxhkd reload its configuration files:
 #super + Escape
