@@ -6,7 +6,7 @@
 
 outer='0x38393A'   # outer
 ##635A41
-outer1='0xB2996E'
+outer1='0xffffff'
 inner1='0xB2996E'  # focused
 inner2='0x131313'  # normal
 
@@ -15,6 +15,7 @@ trap 'bspc config border_width 0; kill -9 -$$' INT TERM
 targets() {
     case $1 in
         focused) bspc query -N -n .local.focused.\!fullscreen;;
+        active)  bspc query -N -na any.\!focused.\!fullscreen;;
         normal)  bspc query -N -n .local.\!focused.\!fullscreen
     esac | grep -iv "$v"
 }
@@ -29,5 +30,6 @@ draw() { chwb2 -I "$outer" -O "$inner" -i "5" -o "5" $* |:; }
         [ "$v" ] || v='abcdefg'
         inner=$inner1 draw "$(targets focused)"
         inner=$inner2 draw "$(targets normal)"
+        inner=$inner1 draw "$(targets active)"
         done
         

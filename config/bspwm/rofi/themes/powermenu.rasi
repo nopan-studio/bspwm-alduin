@@ -7,7 +7,7 @@ configuration {
     drun-display-format:            "{name}";
     disable-history:                false;
 	click-to-exit: 					true;
-    location:                       3;
+    location:                       0;
 }
 
 @import "new_colors.rasi"
@@ -20,8 +20,8 @@ window {
     background-color:               @background;
     text-color:                     @foreground;
     border-radius:                  0px;
-    width:                          200px;
-    height:                         0px;
+    width:                          765px;
+    height:                         0;
     x-offset:                      	-15px;
     y-offset:                       55px;
 }
@@ -85,11 +85,10 @@ listview {
     background-color:               @background;
     columns:                        1;
     lines:							5;
-    spacing:                        15px;
-    cycle:                          false;
+    spacing:                        31px;
+    cycle:                          true;
     dynamic:                        true;
-    layout:                         vertical;
-   
+    layout:                         horizontal;
 }
 
 mainbox {
@@ -99,15 +98,16 @@ mainbox {
     children:                       [ listview ];
     spacing:                       	15px;
     padding:                        15px;
+    
 }
 
 element {
     margin:                        0px 0px 0px 0px;
-    background-color:               @background;
+    background-color:               #272727;
     text-color:                     @foreground;
     orientation:                    horizontal;
     width:                          120px;
-    border-radius:                  0px;
+    border-radius:                  5px;
     padding:                        12.5px 5px 10px 5px;
 }
 
@@ -123,10 +123,12 @@ element-icon {
 element-text {
     background-color: 				inherit;
     text-color:       				inherit;
-	font:							"IBM Plex Sans KR 12";
+	font:							"Iosevka Nerd Fonts 45";
+    font-weight:1000;
+    font-style: Bold;
     /*"IBM Plex Sans KR 15";*/
     expand:                         true;
-    horizontal-align:               0;
+    horizontal-align:               0.5;
     vertical-align:                 0.5;
     margin:                         0px;
 }
@@ -134,8 +136,6 @@ element-text {
 element selected {
     background-color:               #af5f5f;
     text-color:                     @foreground;
-    border:                  		0px 0px 0px 0px;
-    border-radius:                  0px;
     border-color:                  	@background;
 }
 

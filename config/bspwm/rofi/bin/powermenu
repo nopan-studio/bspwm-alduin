@@ -10,17 +10,17 @@ rofi_command="rofi -theme $DIR/rofi/themes/powermenu.rasi"
 uptime=$(uptime -p | sed -e 's/up //g')
 
 # Options
-#shutdown=""
-#reboot=""
-#lock=""
-#suspend=""
-#logout=""
+shutdown=""
+reboot=""
+lock=""
+suspend=""
+logout=""
 
-shutdown="종료"
-reboot="리부트"
-lock="로크"
-suspend="잠"
-logout="퇴거하다"
+#shutdown="종료"
+#reboot="리부트"
+#lock="로크"
+#suspend="잠"
+#logout="퇴거하다"
 
 #shutdown="Shutdown"
 #reboot="Reboot"

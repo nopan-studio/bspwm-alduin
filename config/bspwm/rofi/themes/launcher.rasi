@@ -13,7 +13,7 @@ configuration {
 @import "new_colors.rasi"
 
 * {
-    font:                               "Terminus 12px";
+    font:                          "Terminus 12px";
     background-color:             	@background;
 }
 
@@ -21,27 +21,27 @@ window {
     border: 						0px;
     border-color: 					#b2996e;
     border-radius: 					0px;
-    width: 							320px;
+    width: 							40%;
     height: 						0px;
-    anchor:                         North West;
-    location:                       North West;
-    x-offset:                       15px;
+   /* anchor:                       Center;
+    location:                       North Center; */
+    x-offset:                       0px;
     y-offset:                       55px;
 }
 
 prompt {
     spacing: 						0;
     border: 						0;
-    border-radius: 					8px;
+    border-radius: 					0px;
     background-color:             	@background-alt;
     text-color: 					@foreground;
-    padding:    					6px 14px 6px 14px;
-    font:                           "Waffle 10";
+    padding:    					6px 20px 0px 14px;
+    font:                           "Iosevka Nerd Font 10";
 }
 
 textbox-prompt-colon {
     expand: 						false;
-    str: 							"";
+    str: 							">>";
     padding:    					6px 4px 6px 4px;
     text-color: 					inherit;
     font:                           "Iosevka Nerd Font 10";
@@ -54,7 +54,8 @@ entry {
     text-color: 					@foreground;
     placeholder-color:              @foreground;
     placeholder:                    "Search...";
-    padding:    					6px 2px 6px 2px;
+    background-color:             	@background-alt;
+    padding:    					8px 5px 6px 10px;
     border: 						0px 0px 0px 0px;
     border-color: 					@selected;
     border-radius: 					0px;
@@ -82,9 +83,9 @@ mainbox {
 }
 
 listview {
-    lines:							7;
-    columns:						1;
-    fixed-height: 					0;
+    lines:							6;
+    columns:					    1;
+    fixed-height: 			    	0;
     border: 						0px;
     border-color: 					@foreground;
     spacing: 						5px;
