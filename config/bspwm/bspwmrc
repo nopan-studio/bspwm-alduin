@@ -18,7 +18,7 @@ bspc config remove_unplugged_monitors true
 sleep 1
 
 bspc config border_width        5
-bspc config window_gap		15
+bspc config window_gap		5
 
 bspc config split_ratio          0.50
 bspc config borderless_monocle   true
@@ -69,6 +69,9 @@ xsetroot -cursor_name left_ptr &
 ~/.config/bspwm/scripts/low_bat_notifier.sh
 
 nitrogen --restore &
+
+~/.config/bspwm/scripts/lockscreen-wallpaper.sh
+
 
 #killall bspborder &
 #sleep 1
