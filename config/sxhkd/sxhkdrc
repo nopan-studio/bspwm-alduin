@@ -168,11 +168,11 @@ XF86AudioMute
 
 # Brightness up
 XF86MonBrightnessUp
-	~/.config/bspwm/scripts/brightness-inc.sh
+	brightnessctl set +10
 
 # And brightness down
 XF86MonBrightnessDown
-	~/.config/bspwm/scripts/brightness-dec.sh
+	brightnessctl set 10-
 
 # Screenshot
 Print

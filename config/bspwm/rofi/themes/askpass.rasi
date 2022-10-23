@@ -7,18 +7,18 @@
 * {
     background-color:       @background;
     text-color:             @foreground;
-	font:				 	"JetBrains Mono Nerd Font Medium 10";
+	font:				 	"Terminus 11px";
 }
 
 window {
     width:      			300px;
     padding:    			25px;
-    border:					1px;
+    border:					10px;
     border-radius:          0px;
-    border-color:           @brdr;
+    border-color:           @border;
     location:               center;
     x-offset:               0;
-    y-offset:               -4%;
+    y-offset:               0%;
 }
 
 entry {

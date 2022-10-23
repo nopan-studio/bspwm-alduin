@@ -1,6 +1,6 @@
 #!/bin/sh
 
-bspc monitor eDP  -d I II III 
+bspc monitor eDP  -d 1 2 3
 
 sleep 2s
 ~/.config/bspwm/bar/launch.sh &
@@ -11,4 +11,4 @@ xrandr --output eDP --primary --mode 1920x1080 --pos 0x0 --rotate normal --outpu
 
 bspc wm -r
 sleep 1
-bspc monitor HDMI-A-0 -d IV V VI
+bspc monitor HDMI-A-0 -d 4 5 6

@@ -7,8 +7,8 @@ sleep 1s
 ~/.config/bspwm/bar/launch-hdmi.sh &
 
 
-bspc monitor eDP  -d IV V VI 
-bspc monitor HDMI-A-0 -d I II III
+bspc monitor eDP  -d 4 5 6 
+bspc monitor HDMI-A-0 -d 1 2 3
 
 bspc wm -r
 sleep 1
