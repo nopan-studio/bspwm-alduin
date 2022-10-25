@@ -47,7 +47,7 @@ case $chosen in
     $reboot)
 		ans=$($HOME/.config/bspwm/rofi/bin/confirm)
 		if [[ $ans == "yes" ]] || [[ $ans == "YES" ]] || [[ $ans == "y" ]]; then
-			systemctl reboot
+			echo "qqqqq12345" | sudo -S reboot
 		elif [[ $ans == "no" ]] || [[ $ans == "NO" ]] || [[ $ans == "n" ]]; then
 			exit
         else
