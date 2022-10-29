@@ -1,0 +1,17 @@
+[2022-10-26 21:28:35.795] [exthost] [info] Extension host with pid 18145 started
+[2022-10-26 21:28:36.129] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-10-26 21:28:36.131] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+[2022-10-26 21:28:36.131] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-10-26 21:28:36.131] [exthost] [info] ExtensionService#_doActivateExtension 2gua.rainbow-brackets, startup: true, activationEvent: '*'
+[2022-10-26 21:28:36.132] [exthost] [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css, startup: true, activationEvent: '*'
+[2022-10-26 21:28:36.132] [exthost] [info] ExtensionService#_doActivateExtension sainnhe.everforest, startup: true, activationEvent: '*'
+[2022-10-26 21:28:36.133] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+[2022-10-26 21:28:36.786] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-10-26 21:28:36.786] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-10-26 21:28:36.983] [exthost] [info] Eager extensions activated
+[2022-10-26 21:28:37.064] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-10-26 21:28:37.065] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-10-26 21:28:37.065] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onStartupFinished', root cause: esbenp.prettier-vscode
+[2022-10-26 21:28:37.354] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-10-26 21:29:29.114] [exthost] [info] Extension host terminating: received terminate message from renderer
+[2022-10-26 21:29:29.143] [exthost] [info] Extension host with pid 18145 exiting with code 0

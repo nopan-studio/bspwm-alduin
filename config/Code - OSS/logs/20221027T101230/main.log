@@ -1,0 +1,16 @@
+[2022-10-27 10:12:30.989] [main] [info] update#ctor - updates are disabled as there is no update URL
+[2022-10-27 10:12:33.704] [main] [info] Starting extension host with pid 2169 (fork() took 15 ms).
+[2022-10-27 10:23:03.818] [main] [info] Starting extension host with pid 3009 (fork() took 14 ms).
+[2022-10-27 10:49:11.460] [main] [info] Extension host with pid 3009 exited with code: 0, signal: null.
+[2022-10-27 10:50:58.730] [main] [info] Extension host with pid 2169 exited with code: 0, signal: null.
+[2022-10-27 10:51:01.342] [main] [info] Starting extension host with pid 19095 (fork() took 17 ms).
+[2022-10-27 11:37:44.313] [main] [info] Starting extension host with pid 24306 (fork() took 11 ms).
+[2022-10-27 11:40:02.412] [main] [info] Extension host with pid 24306 exited with code: 0, signal: null.
+[2022-10-27 11:44:21.114] [main] [info] Extension host with pid 19095 exited with code: 0, signal: null.
+[2022-10-27 11:44:22.904] [main] [info] Starting extension host with pid 29290 (fork() took 11 ms).
+[2022-10-27 11:50:06.324] [main] [info] Starting extension host with pid 30618 (fork() took 13 ms).
+[2022-10-27 12:02:48.511] [main] [info] Extension host with pid 30618 exited with code: 0, signal: null.
+[2022-10-27 12:02:59.923] [main] [info] Extension host with pid 29290 exited with code: 0, signal: null.
+[2022-10-27 12:03:02.081] [main] [info] Starting extension host with pid 2417 (fork() took 16 ms).
+[2022-10-27 12:46:10.093] [main] [info] Waiting for extension host with pid 2417 to exit.
+[2022-10-27 12:46:10.109] [main] [info] Extension host with pid 2417 exited with code: 0, signal: null.

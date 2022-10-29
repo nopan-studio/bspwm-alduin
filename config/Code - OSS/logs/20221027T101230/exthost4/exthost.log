@@ -1,0 +1,19 @@
+[2022-10-27 11:37:45.949] [exthost] [info] Extension host with pid 24306 started
+[2022-10-27 11:37:45.950] [exthost] [info] Skipping acquiring lock for /home/tsuki/.config/Code - OSS/User/workspaceStorage/d0c9168bed484de35951a3eaa5684456.
+[2022-10-27 11:37:46.754] [exthost] [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+[2022-10-27 11:37:46.758] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-10-27 11:37:46.759] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+[2022-10-27 11:37:46.763] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-10-27 11:37:46.764] [exthost] [info] ExtensionService#_doActivateExtension 2gua.rainbow-brackets, startup: true, activationEvent: '*'
+[2022-10-27 11:37:46.764] [exthost] [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css, startup: true, activationEvent: '*'
+[2022-10-27 11:37:46.764] [exthost] [info] ExtensionService#_doActivateExtension sainnhe.everforest, startup: true, activationEvent: '*'
+[2022-10-27 11:37:46.765] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+[2022-10-27 11:37:48.224] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-10-27 11:37:48.228] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-10-27 11:37:48.897] [exthost] [info] Eager extensions activated
+[2022-10-27 11:37:49.054] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-10-27 11:37:49.055] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-10-27 11:37:49.055] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onStartupFinished', root cause: esbenp.prettier-vscode
+[2022-10-27 11:37:49.804] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-10-27 11:40:02.338] [exthost] [info] Extension host terminating: received terminate message from renderer
+[2022-10-27 11:40:02.388] [exthost] [info] Extension host with pid 24306 exiting with code 0

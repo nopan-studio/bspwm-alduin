@@ -1,0 +1,7 @@
+{
+    "window.menuBarVisibility": "toggle",
+    "workbench.colorTheme": "Alduin",
+    "editor.formatOnSave": true,
+    "editor.fontFamily": "'JetBrainsMono Nerd Font Mono', 'monospace', monospace",
+    "editor.fontLigatures": true ->
+}

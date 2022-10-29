@@ -1,0 +1,75 @@
+#! /bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+pkill -9 sxhkd ksuperkey
+
+sxhkd &
+
+bspc config remove_disabled_monitors true
+bspc config remove_unplugged_monitors true
+
+# Set display from arandr saved script
+[ "$1" = 0 ] && {
+	~/.config/bspwm/screenlayout/laptop-screen.sh
+	# Bar
+	#~/.config/bspwm/bar/launch.sh &
+}
+
+sleep 1
+
+bspc config border_width        4
+bspc config window_gap		0
+
+bspc config split_ratio          0.50
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config pointer_follows_focus true
+bspc config focus_follows_pointer true
+
+# Border
+# 3C3837
+bspc config focused_border_color 		"#111111"        
+bspc config normal_border_color 		"#111111"
+bspc config active_border_color         "#111111"
+bspc config presel_feedback_color       "#111111"
+
+
+ksuperkey -e 'Super_L=Alt_L|F1' &
+ksuperkey -e 'Super_R=Alt_L|F1' &
+
+
+# bash $HOME/.fehbg
+#
+# Autostart
+#
+
+# Notifications
+pkill dunst &
+/usr/bin/dunst &
+
+# Polkit
+/usr/libexec/polkit-gnome-authentication-agent-1
+
+# Dex
+dex -a -s /etc/xdg/autostart/:~/.config/autostart/  
+
+# Picom
+pkill picom &
+sleep 1
+picom &
+
+# Network Applet
+#nm-applet --indicator &
+
+# Cursor
+xsetroot -cursor_name left_ptr &
+
+# Low battery notifier
+~/.config/bspwm/scripts/low_bat_notifier.sh
+
+nitrogen --restore &
+
+~/.config/bspwm/scripts/lockscreen-wallpaper.sh
+#killall bspborder &
+#sleep 1
+#~/.config/bspwm/bin/bspborder &

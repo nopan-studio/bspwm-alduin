@@ -1,0 +1,14 @@
+# GIMP user context
+
+(tool "gimp-dodge-burn-tool")
+(paint-info "gimp-dodge-burn")
+(brush "2. Hardness 025")
+(dynamics "Dynamics Off")
+(mybrush "100% Opaque")
+(pattern "Pine")
+(gradient "FG to BG (RGB)")
+(palette "Standard")
+(font "Standard")
+(tool-preset "Core Pointer")
+
+# end of user context

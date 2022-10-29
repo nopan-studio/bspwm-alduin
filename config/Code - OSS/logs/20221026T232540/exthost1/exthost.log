@@ -1,0 +1,16 @@
+[2022-10-26 23:25:45.670] [exthost] [info] Extension host with pid 12777 started
+[2022-10-26 23:25:46.107] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-10-26 23:25:46.110] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+[2022-10-26 23:25:46.110] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-10-26 23:25:46.111] [exthost] [info] ExtensionService#_doActivateExtension sainnhe.everforest, startup: true, activationEvent: '*'
+[2022-10-26 23:25:46.111] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+[2022-10-26 23:25:46.771] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-10-26 23:25:46.835] [exthost] [info] Eager extensions activated
+[2022-10-26 23:25:46.840] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-10-26 23:25:46.841] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-10-26 23:25:46.842] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onStartupFinished', root cause: esbenp.prettier-vscode
+[2022-10-26 23:25:47.016] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-10-26 23:27:37.685] [exthost] [info] Extension host terminating: received terminate message from renderer
+[2022-10-26 23:27:37.705] [exthost] [error] Error: read ECONNRESET
+    at Pipe.onStreamRead (node:internal/stream_base_commons:217:20)
+[2022-10-26 23:27:37.707] [exthost] [info] Extension host with pid 12777 exiting with code 0

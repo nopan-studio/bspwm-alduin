@@ -1,0 +1,20 @@
+[2022-10-27 12:46:26.948] [exthost] [info] Extension host with pid 3790 started
+[2022-10-27 12:46:26.948] [exthost] [info] Skipping acquiring lock for /home/tsuki/.config/Code - OSS/User/workspaceStorage/ad978ef43287973f9495ea8d45439ec2.
+[2022-10-27 12:46:27.223] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-10-27 12:46:27.225] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+[2022-10-27 12:46:27.225] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-10-27 12:46:27.226] [exthost] [info] ExtensionService#_doActivateExtension sainnhe.everforest, startup: true, activationEvent: '*'
+[2022-10-27 12:46:27.226] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+[2022-10-27 12:46:27.686] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-10-27 12:46:27.798] [exthost] [info] Eager extensions activated
+[2022-10-27 12:46:27.944] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-10-27 12:46:27.947] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-10-27 12:46:27.948] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onStartupFinished', root cause: esbenp.prettier-vscode
+[2022-10-27 12:46:28.343] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+[2022-10-27 12:46:28.479] [exthost] [info] ExtensionService#_doActivateExtension 2gua.rainbow-brackets, startup: false, activationEvent: '*'
+[2022-10-27 12:46:28.479] [exthost] [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css, startup: false, activationEvent: '*'
+[2022-10-27 12:46:28.604] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-10-27 12:46:40.133] [exthost] [info] Extension host terminating: received terminate message from renderer
+[2022-10-27 12:46:40.197] [exthost] [error] Error: read ECONNRESET
+    at Pipe.onStreamRead (node:internal/stream_base_commons:217:20)
+[2022-10-27 12:46:40.210] [exthost] [info] Extension host with pid 3790 exiting with code 0

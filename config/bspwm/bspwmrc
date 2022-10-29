@@ -13,14 +13,11 @@ bspc config remove_unplugged_monitors true
 [ "$1" = 0 ] && {
 	~/.config/bspwm/screenlayout/laptop-screen.sh
 	# Bar
-	#~/.config/bspwm/bar/launch.sh &
+	#~/.config/bspwm/bar/launch.sh &
 }
-
-sleep 1
 
 bspc config border_width    8
 bspc config window_gap		8
-
 bspc config split_ratio          0.50
 bspc config borderless_monocle   false
 bspc config gapless_monocle      true
@@ -68,9 +65,12 @@ xsetroot -cursor_name left_ptr &
 # Low battery notifier
 ~/.config/bspwm/scripts/low_bat_notifier.sh
 
+# Wallpaper
 nitrogen --restore &
 
+# betterlockscreen configure script
 ~/.config/bspwm/scripts/lockscreen-wallpaper.sh
-#killall bspborder &
-#sleep 1
-#~/.config/bspwm/bin/bspborder &
+
+
+# Rules
+bspc rule -a Zathura state=tiled

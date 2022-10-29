@@ -1,0 +1,85 @@
+/*
+    UserChrome.css
+    Author: Frankie Homewood
+    Last Modified: 12-06-21
+*/
+
+/* Adjust shape and size of the window buttons in the top right */
+.titlebar-min, .titlebar-max, .titlebar-restore, .titlebar-close{
+  padding: 0px 8px !important;
+  margin: 3px 5px 9px 5px !important;
+  border-radius: 3px !important;
+}
+.titlebar-buttonbox {
+margin-bottom: 5px;
+}
+/*/
+
+/* Remove left and right tab spacers */
+.titlebar-spacer{
+  width: 0px !important;
+  height: 0px !important;
+  margin: 0px !important;
+}
+/*/
+
+/* Thins out the tab-bar */
+ .tab-content, .tab-loading-burst, .tab-background{
+  height: 20px !important;
+  border-radius: 10px !important;
+}
+.tabbrowser-tab::after{
+  content: none !important;
+}
+toolbox{
+  margin-bottom: -52px;
+}
+#nav-bar{
+  opacity: 0;
+}
+#scrollbutton-up > .toolbarbutton-icon, #scrollbutton-down > .toolbarbutton-icon{
+  margin-bottom: 10px !important;
+}
+/*/
+
+/* Just makes the sound icon a little smaller */
+.tab-icon-sound {
+  height: 10px !important;
+}
+/*/
+
+/* Makes the cross button only appear on hover */
+.tabbrowser-tab:not([pinned]):not(:hover) .tab-close-button {
+  padding: 7px -4px 7px 0px !important;
+  color: rgba(0,0,0,0) !important;
+}
+.tabbrowser-tab:not([pinned]):hover .tab-close-button {
+  color: rgba(255,255,255,1) !important;
+}
+.tab-close-button {
+  height: 14px !important;
+  width: 14px !important;
+  padding: 7px -4px 7px 0px !important;
+  margin: 0 !important;
+  border-radius: 50% !important;
+}
+/*/
+
+/* Centers the tab menu */
+scrollbox[orient="horizontal"]{
+ -moz-box-pack: center; 
+}
+#TabsToolbar-customization-target{
+  margin-left: 138px !important;
+}
+.tab-label, .tab-text{
+  -moz-box-flex: 1 !important;
+  text-align: center !important;
+}
+/*/
+
+/* Removes unnecessary highlights/icons */
+#alltabs-button, .tab-line, .private-browsing-indicator{
+  display: none;
+}
+/*/

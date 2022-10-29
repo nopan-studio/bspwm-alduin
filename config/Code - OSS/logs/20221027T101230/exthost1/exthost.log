@@ -1,0 +1,96 @@
+[2022-10-27 10:12:35.933] [exthost] [info] Extension host with pid 2169 started
+[2022-10-27 10:12:36.393] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-10-27 10:12:36.398] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+[2022-10-27 10:12:36.399] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-10-27 10:12:36.400] [exthost] [info] ExtensionService#_doActivateExtension sainnhe.everforest, startup: true, activationEvent: '*'
+[2022-10-27 10:12:36.400] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+[2022-10-27 10:12:37.440] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-10-27 10:12:37.623] [exthost] [info] Eager extensions activated
+[2022-10-27 10:12:37.716] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-10-27 10:12:37.717] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-10-27 10:12:37.717] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onStartupFinished', root cause: esbenp.prettier-vscode
+[2022-10-27 10:12:38.405] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-10-27 10:50:57.968] [exthost] [info] Extension host terminating: received terminate message from renderer
+[2022-10-27 10:50:58.708] [exthost] [error] TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 't'
+    |     property '_readableState' -> object with constructor 'M'
+    |     property 'pipes' -> object with constructor 'Array'
+    |     index 0 -> object with constructor 't.ConsoleForElectron'
+    --- property 'parent' closes the circle
+    at JSON.stringify (<anonymous>)
+    at /home/tsuki/.vscode-oss/extensions/vscodevim.vim-1.24.1/src/register/register.ts:333:16
+    at process.async (node:internal/process/task_queues:96:5)
+    at Object.e.deactivate (/home/tsuki/.vscode-oss/extensions/vscodevim.vim-1.24.1/extension.ts:64:8)
+    at async Promise.all (index 9)
+    at p._deactivateAll (/usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:102:10661)
+[2022-10-27 10:50:58.708] [exthost] [info] Extension host with pid 2169 exiting with code 0
+[2022-10-27 10:51:02.810] [exthost] [info] Extension host with pid 19095 started
+[2022-10-27 10:51:02.810] [exthost] [info] Skipping acquiring lock for /home/tsuki/.config/Code - OSS/User/workspaceStorage/39746503e411922f6e3fe252bb073cd7.
+[2022-10-27 10:51:03.394] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-10-27 10:51:03.397] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+[2022-10-27 10:51:03.398] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-10-27 10:51:03.400] [exthost] [info] ExtensionService#_doActivateExtension 2gua.rainbow-brackets, startup: true, activationEvent: '*'
+[2022-10-27 10:51:03.401] [exthost] [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css, startup: true, activationEvent: '*'
+[2022-10-27 10:51:03.402] [exthost] [info] ExtensionService#_doActivateExtension sainnhe.everforest, startup: true, activationEvent: '*'
+[2022-10-27 10:51:03.403] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+[2022-10-27 10:51:04.317] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-10-27 10:51:04.318] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-10-27 10:51:04.717] [exthost] [info] Eager extensions activated
+[2022-10-27 10:51:04.781] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-10-27 10:51:04.782] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-10-27 10:51:04.783] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onStartupFinished', root cause: esbenp.prettier-vscode
+[2022-10-27 10:51:05.619] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-10-27 11:20:31.470] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-10-27 11:20:31.471] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-10-27 11:20:31.471] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-10-27 11:44:20.562] [exthost] [info] Extension host terminating: received terminate message from renderer
+[2022-10-27 11:44:21.098] [exthost] [error] TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 't'
+    |     property '_readableState' -> object with constructor 'M'
+    |     property 'pipes' -> object with constructor 'Array'
+    |     index 0 -> object with constructor 't.ConsoleForElectron'
+    --- property 'parent' closes the circle
+    at JSON.stringify (<anonymous>)
+    at /home/tsuki/.vscode-oss/extensions/vscodevim.vim-1.24.1/src/register/register.ts:333:16
+    at process.async (node:internal/process/task_queues:96:5)
+    at Object.e.deactivate (/home/tsuki/.vscode-oss/extensions/vscodevim.vim-1.24.1/extension.ts:64:8)
+    at async Promise.all (index 15)
+    at p._deactivateAll (/usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:102:10661)
+[2022-10-27 11:44:21.100] [exthost] [info] Extension host with pid 19095 exiting with code 0
+[2022-10-27 11:44:24.145] [exthost] [info] Extension host with pid 29290 started
+[2022-10-27 11:44:24.145] [exthost] [info] Skipping acquiring lock for /home/tsuki/.config/Code - OSS/User/workspaceStorage/d0c9168bed484de35951a3eaa5684456.
+[2022-10-27 11:44:24.301] [exthost] [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+[2022-10-27 11:44:24.302] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-10-27 11:44:24.303] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+[2022-10-27 11:44:24.303] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-10-27 11:44:24.304] [exthost] [info] ExtensionService#_doActivateExtension 2gua.rainbow-brackets, startup: true, activationEvent: '*'
+[2022-10-27 11:44:24.304] [exthost] [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css, startup: true, activationEvent: '*'
+[2022-10-27 11:44:24.304] [exthost] [info] ExtensionService#_doActivateExtension sainnhe.everforest, startup: true, activationEvent: '*'
+[2022-10-27 11:44:24.305] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+[2022-10-27 11:44:24.884] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-10-27 11:44:24.884] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-10-27 11:44:25.078] [exthost] [info] Eager extensions activated
+[2022-10-27 11:44:25.118] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-10-27 11:44:25.119] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-10-27 11:44:25.119] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onStartupFinished', root cause: esbenp.prettier-vscode
+[2022-10-27 11:44:25.403] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-10-27 12:02:59.865] [exthost] [info] Extension host terminating: received terminate message from renderer
+[2022-10-27 12:02:59.896] [exthost] [info] Extension host with pid 29290 exiting with code 0
+[2022-10-27 12:03:02.928] [exthost] [info] Extension host with pid 2417 started
+[2022-10-27 12:03:02.929] [exthost] [info] Skipping acquiring lock for /home/tsuki/.config/Code - OSS/User/workspaceStorage/7c10289f76f43ac9baa62c7578738b0c.
+[2022-10-27 12:03:03.127] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-10-27 12:03:03.129] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+[2022-10-27 12:03:03.129] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-10-27 12:03:03.130] [exthost] [info] ExtensionService#_doActivateExtension 2gua.rainbow-brackets, startup: true, activationEvent: '*'
+[2022-10-27 12:03:03.130] [exthost] [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css, startup: true, activationEvent: '*'
+[2022-10-27 12:03:03.130] [exthost] [info] ExtensionService#_doActivateExtension sainnhe.everforest, startup: true, activationEvent: '*'
+[2022-10-27 12:03:03.131] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+[2022-10-27 12:03:03.931] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-10-27 12:03:03.931] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-10-27 12:03:04.168] [exthost] [info] Eager extensions activated
+[2022-10-27 12:03:04.196] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-10-27 12:03:04.196] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-10-27 12:03:04.197] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onStartupFinished', root cause: esbenp.prettier-vscode
+[2022-10-27 12:03:04.400] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-10-27 12:46:10.065] [exthost] [info] Extension host terminating: received terminate message from renderer
+[2022-10-27 12:46:10.083] [exthost] [info] Extension host with pid 2417 exiting with code 0

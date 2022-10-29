@@ -1,0 +1,14 @@
+[2022-10-27 10:50:50.456] [renderer1] [error] Error: File not found
+    at g.handleSetInputError (vscode-file://vscode-app/usr/lib/code-oss/resources/app/out/vs/workbench/workbench.desktop.main.js:2741:95786)
+    at async g.setInput (vscode-file://vscode-app/usr/lib/code-oss/resources/app/out/vs/workbench/workbench.desktop.main.js:2741:95026)
+    at async r.doSetInput (vscode-file://vscode-app/usr/lib/code-oss/resources/app/out/vs/workbench/workbench.desktop.main.js:2739:6429)
+    at async r.doOpenEditor (vscode-file://vscode-app/usr/lib/code-oss/resources/app/out/vs/workbench/workbench.desktop.main.js:2739:4791)
+    at async r.openEditor (vscode-file://vscode-app/usr/lib/code-oss/resources/app/out/vs/workbench/workbench.desktop.main.js:2739:3783)
+    at async vscode-file://vscode-app/usr/lib/code-oss/resources/app/out/vs/workbench/workbench.desktop.main.js:2966:16842
+[2022-10-27 10:51:00.930] [renderer1] [error] Error: File not found
+    at g.handleSetInputError (vscode-file://vscode-app/usr/lib/code-oss/resources/app/out/vs/workbench/workbench.desktop.main.js:2741:95786)
+    at async g.setInput (vscode-file://vscode-app/usr/lib/code-oss/resources/app/out/vs/workbench/workbench.desktop.main.js:2741:95026)
+    at async r.doSetInput (vscode-file://vscode-app/usr/lib/code-oss/resources/app/out/vs/workbench/workbench.desktop.main.js:2739:6429)
+    at async r.doOpenEditor (vscode-file://vscode-app/usr/lib/code-oss/resources/app/out/vs/workbench/workbench.desktop.main.js:2739:4791)
+    at async r.openEditor (vscode-file://vscode-app/usr/lib/code-oss/resources/app/out/vs/workbench/workbench.desktop.main.js:2739:3783)
+    at async vscode-file://vscode-app/usr/lib/code-oss/resources/app/out/vs/workbench/workbench.desktop.main.js:2966:16842
