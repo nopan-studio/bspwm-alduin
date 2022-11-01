@@ -11,7 +11,7 @@ uptime=$(uptime -p | sed -e 's/up //g')
 
 # Options
 shutdown=" Shutdown"
-reboot=" Reboot "
+reboot=" Reboot"
 lock=" Lock"
 suspend=" Sleep"
 logout=" Logout"
@@ -29,10 +29,10 @@ logout=" Logout"
 #logout="Logout"
 
 # Variable passed to rofi
-options="$shutdown\n$reboot\n$lock\n$suspend\n$logout"
+options="$lock\n$suspend\n$logout\n$reboot\n$shutdown"
 _msg="Options  -  yes / y / no / n"
 
-chosen="$(echo -e "$options" | $rofi_command -p "UP - $uptime" -dmenu -selected-row 2)"
+chosen="$(echo -e "$options" | $rofi_command -p "UP - $uptime" -dmenu)"
 case $chosen in
     $shutdown)
 		ans=$($HOME/.config/bspwm/rofi/bin/confirm)

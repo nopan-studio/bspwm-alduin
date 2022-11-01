@@ -7,7 +7,7 @@ configuration {
     drun-display-format:            "{name}";
     disable-history:                false;
 	click-to-exit: 					true;
-    location:                       3;
+    location:                       1;
 }
 
 @import "new_colors.rasi"
@@ -25,7 +25,7 @@ window {
     height:                         100%;
     x-offset:                      	0px;
     y-offset:                       0px;
-    padding : 0 0 0 calc(100% - 300px);
+    padding:			            0% calc(100% - 300px) 0% 0%;
 }
 
 prompt {
@@ -84,33 +84,32 @@ case-indicator {
 
 
 listview {
+location : 0;
     background-color:               @background;
     columns:                        1;
     lines:							5;
-    spacing:                        25px;
-    cycle:                          false;
+    spacing:                        3%;
+    cycle:                          true;
     dynamic:                        true;
     layout:                         vertical;
 }
 
 mainbox {
-    border: 						0 0 0 8px;
+    location: 0;
+    border: 						0 8px 0 0;
     border-color: 					@border;
     background-color:               @background;
     children:                       [ listview ];
-    spacing:                       	15px;
-    padding:                        30px;
-    
+    padding:                        25% 0px 25% 0px;
 }
 
 element {
-    margin:                        0px 0px 0px 0px;
-    background-color:               @background;
+    margin :                        0px 100px 0px 100px;
+    background-color:               @background-alt;
     text-color:                     @foreground;
     orientation:                    horizontal;
-    width:                          100px;
-    border-radius:                  0px;
-    padding:                        16px;
+    border-radius:                  1px;
+    padding:                        8px;
 }
 
 element-icon {
@@ -125,17 +124,17 @@ element-icon {
 element-text {
     background-color: 				inherit;
     text-color:       				inherit;
-	font:							"Terminus 13px";
-    font-weight:0;
-    /*"IBM Plex Sans KR 15";*/
-    expand:                         true;
-    horizontal-align:               0;
+	font:							"Terminus 60px";
+    font-weight:1000;
+    font-style: Bold;
+    expand:                         false;
+    horizontal-align:               0.35;
     vertical-align:                 0.5;
     margin:                         0px;
 }
 
 element selected {
-    background-color:               @selected;
+    background-color:               #af5f5f;
     text-color:                     @foreground;
     border-color:                  	@background;
 }
