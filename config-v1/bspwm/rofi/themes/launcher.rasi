@@ -2,31 +2,34 @@
 /* Everyone is permitted to copy and distribute copies of this file under GNU-GPL3 */
 
 configuration {
-    show-icons:     false;
-    display-drun:       "";
-    drun-display-format:       "{name}";
-    disable-history:       false;
-    click-to-exit:  true;
-    location:   0;
+    show-icons:            true;
+    display-drun:           "";
+    drun-display-format:    "{name}";
+    disable-history:        false;
+    click-to-exit:          true;
+    location:               1;
 }
 
 @import "new_colors.rasi"
 
 * {
-    font:                          "Terminus 12px";
+    font:                          "Terminus 13px";
     background-color:             	@background;
 }
 
 window {
+    transparency :                  "real";
+    background-color:               #000000aa;
     border: 						0px;
     border-color: 					#b2996e;
     border-radius: 					0px;
-    width: 							40%;
-    height: 						0px;
+    width: 							100%;
+    height: 						100%;
    /* anchor:                       Center;
     location:                       North Center; */
     x-offset:                       0px;
     y-offset:                       0px;
+    padding:			            0% calc(100% - 300px) 0% 0%;
 }
 
 prompt {
@@ -36,7 +39,7 @@ prompt {
     background-color:             	@background-alt;
     text-color: 					@foreground;
     padding:    					6px 20px 0px 14px;
-    font:                           "Iosevka Nerd Font 11px";
+    font:                           "Iosevka Nerd Font 13px";
 }
 
 textbox-prompt-colon {
@@ -44,7 +47,7 @@ textbox-prompt-colon {
     str: 							"";
     padding:    					6px 4px 6px 4px;
     text-color: 					inherit;
-    font:                           "Iosevka Nerd Font 11px";
+    font:                           "Iosevka Nerd Font 13px";
 }
 
 entry {
@@ -76,7 +79,7 @@ inputbar {
 }
 
 mainbox {
-    border: 						8px;
+    border: 						0px 8px 0px 0px;
     border-color: 					@border;
     spacing: 						15px;
     padding: 						30px;
@@ -96,6 +99,7 @@ listview {
 element-text, element-icon {
     background-color: inherit;
     text-color:       inherit;
+    padding : 5px;
 }
 
 element {
@@ -115,7 +119,7 @@ element normal.active {
     text-color:       				@on;
 }
 element selected.normal {
-    background-color: 				#af5f5f;
+    background-color: 				@selected;
     text-color:       				@foreground;
     border: 						0px;
     border-radius: 					0px;
@@ -126,8 +130,8 @@ element selected.urgent {
     text-color:       				@off;
 }
 element selected.active {
-    background-color: 			    #af5f5f;
-    text-color:       				@selected;
+    background-color: 			    @selected;
+    text-color:       				@foreground;
 }
 element alternate.normal {
     background-color: 				@background;
