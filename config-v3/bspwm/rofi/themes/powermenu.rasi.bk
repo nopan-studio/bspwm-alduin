@@ -1,0 +1,162 @@
+/* Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com> */
+/* Everyone is permitted to copy and distribute copies of this file under GNU-GPL3 */
+
+configuration {
+    show-icons:                     false;
+    display-drun: 					"";
+    drun-display-format:            "{name}";
+    disable-history:                false;
+	click-to-exit: 					true;
+    location:                       1;
+}
+
+@import "new_colors.rasi"
+
+/* Line Responsible For Button Layouts */
+/* BUTTON = TRUE */
+window {
+    transparency :                  "real";
+    background-color:               #000000aa;
+    border: 						0px;
+    border-color: 					@border;
+    text-color:                     @foreground;
+    border-radius:                  0px;
+    width:                          100%;
+    height:                         100%;
+    x-offset:                      	0px;
+    y-offset:                       0px;
+    padding:			            0% calc(100% - 300px) 0% 0%;
+}
+
+prompt {
+    enabled: 						true;
+	margin: 						0px 0px 0px 0px;
+	padding: 						8px;
+	background-color: 				@background-alt;
+	text-color: 					@foreground;
+    border:                  		0px 0px 0px 0px;
+    border-color:                  	@background;
+    border-radius:                  10px;
+}
+
+textbox-prompt-colon {
+	expand: 						false;
+	str: 							"";
+    border-radius:                  0px;
+    background-color:               @selected;
+    text-color:                     @background;
+    padding:                        8px 12px 8px 12px;
+	font:							"Iosevka Nerd Font 10";
+}
+
+entry {
+    background-color:               @background-alt;
+    text-color:                     @foreground;
+    placeholder-color:              @foreground;
+    expand:                         true;
+    horizontal-align:               0;
+    placeholder:                    "Search...";
+    blink:                          true;
+    border:                  		0px 0px 0px 0px;
+    border-color:                  	@background;
+    border-radius:                  0px;
+    padding:                        8px;
+}
+
+inputbar {
+	children: 						[ textbox-prompt-colon, prompt ];
+    background-color:               @background-alt;
+    text-color:                     @foreground;
+    expand:                         false;
+    border:                  		0px 0px 0px 0px;
+    border-radius:                  0px;
+    border-color:                  	@background;
+    margin:                         0px 0px 0px 0px;
+    padding:                        0px;
+    position:                       center;
+}
+
+case-indicator {
+    background-color:               @background;
+    text-color:                     @foreground;
+    spacing:                        0;
+}
+
+
+listview {
+location : 0;
+    background-color:               @background;
+    columns:                        1;
+    lines:							5;
+    spacing:                        3%;
+    cycle:                          true;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    location: 0;
+    border: 						0 8px 0 0;
+    border-color: 					@border;
+    background-color:               @background;
+    children:                       [ listview ];
+    padding:                        25% 0px 25% 0px;
+}
+
+element {
+    margin :                        0px 100px 0px 100px;
+    background-color:               @background-alt;
+    text-color:                     @foreground;
+    orientation:                    horizontal;
+    border-radius:                  1px;
+    padding:                        8px;
+}
+
+element-icon {
+    background-color: 				inherit;
+    text-color:       				inherit;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    size:                           0px;
+    border:                         0px;
+}
+
+element-text {
+    background-color: 				inherit;
+    text-color:       				inherit;
+	font:							"Terminus 60px";
+    font-weight:1000;
+    font-style: Bold;
+    expand:                         false;
+    horizontal-align:               0.35;
+    vertical-align:                 0.5;
+    margin:                         0px;
+}
+
+element selected {
+    background-color:               #af5f5f;
+    text-color:                     @foreground;
+    border-color:                  	@background;
+}
+
+element.active,
+element.selected.urgent {
+  background-color: @on;
+  text-color: @background;
+  border-color: @on;
+}
+
+element.selected.urgent {
+  border-color: @background;
+}
+
+element.urgent,
+element.selected.active {
+  background-color: @off;
+  text-color: @background;
+  border-color: @off;
+}
+
+element.selected.active {
+  border-color: @background;
+}

@@ -1,0 +1,85 @@
+#! /bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+pkill sxhkd 
+pkill ksuperkey
+
+sxhkd &
+
+bspc config remove_disabled_monitors true
+bspc config remove_unplugged_monitors true
+
+[ "$1" = 0 ] && {
+	autorandr laptop
+	# Set display from arandr saved script
+	~/.config/bspwm/screenlayout/laptop-screen.sh
+	
+	# set brightness
+	echo 100 >> /sys/class/backlight/amdgpu_bl0/brightness
+
+}
+
+bspc config border_width    				0
+bspc config window_gap							1
+bspc config left_padding 						0
+bspc config right_padding 					0
+bspc config split_ratio          		0.50
+bspc config borderless_monocle   		false
+bspc config gapless_monocle      		false
+bspc config pointer_follows_focus 	true
+bspc config focus_follows_pointer 	true
+
+# Border
+# 3C3837
+bspc config focused_border_color 			"#111111"        
+bspc config normal_border_color 			"#111111"
+bspc config active_border_color     	"#111111"
+bspc config presel_feedback_color   	"#111111"
+
+#ksuperkey -e 'Super_L=Alt_L|F1' &
+#ksuperkey -e 'Super_R=Alt_L|F1' &
+
+# bash $HOME/.fehbg
+#
+# Autostart
+#
+
+# Notifications
+pkill dunst &
+/usr/bin/dunst &
+
+# Polkit
+/usr/libexec/polkit-gnome-authentication-agent-1
+
+# Dex
+dex -a -s /etc/xdg/autostart/:~/.config/autostart/  
+
+# Picom
+pkill picom &
+sleep 1
+picom &
+
+# Network Applet
+#nm-applet --indicator &
+
+# Cursor
+#xsetroot -cursor_name left_ptr &
+
+# Low battery notifier
+~/.config/bspwm/scripts/low_bat_notifier.sh
+
+# Wallpaper
+nitrogen --restore &
+
+# betterlockscreen configure script
+~/.config/bspwm/scripts/lockscreen-wallpaper.sh
+
+# Rules
+bspc rule -a Zathura state=tiled
+
+#bspc subscribe desktop_layout | while read -r _ _ _ l; do case $l in monocle) picom-trans --reset;; tiled) pkill -SIGUSR1 picom;; esac; done
+
+spotifyd -b pulseaudio $
+wmname LG3D &
+

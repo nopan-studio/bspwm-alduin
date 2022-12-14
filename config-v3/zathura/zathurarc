@@ -1,0 +1,36 @@
+# Base16 oomox-Alduin
+# Author: oomox-Alduin
+
+set default-bg                  "#171717"
+set default-fg                  "#272727"
+
+set statusbar-fg                "#030303"
+set statusbar-bg                "#727272"
+
+set inputbar-bg                 "#171717"
+set inputbar-fg                 "#dfdfaf"
+
+set notification-bg             "#171717"
+set notification-fg             "#dfdfaf"
+
+set notification-error-bg       "#171717"
+set notification-error-fg       "#af5f5f"
+
+set notification-warning-bg     "#171717"
+set notification-warning-fg     "#af5f5f"
+
+set highlight-color             "#af875f"
+set highlight-active-color      "#878787"
+
+set completion-bg               "#272727"
+set completion-fg               "#878787"
+
+set completion-highlight-fg     "#dfdfaf"
+set completion-highlight-bg     "#878787"
+
+set recolor-lightcolor          "#171717"
+set recolor-darkcolor           "#dfdfaf"
+
+set recolor                     "false"
+set recolor-keephue             "false"
+
