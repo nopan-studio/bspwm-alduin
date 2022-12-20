@@ -1,0 +1,42 @@
+# Base16 oomox-Alduin 256 - alacritty color config
+# oomox-Alduin
+colors:
+  # Default colors
+  primary:
+    background: '0x171717'
+    foreground: '0xdfdfaf'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '0x171717'
+    cursor: '0xdfdfaf'
+
+  # Normal colors
+  normal:
+    black:   '0x171717'
+    red:     '0xaf5f5f'
+    green:   '0x87875f'
+    yellow:  '0xaf875f'
+    blue:    '0x878787'
+    magenta: '0xaf8787'
+    cyan:    '0x87afaf'
+    white:   '0xdfdfaf'
+
+  # Bright colors
+  bright:
+    black:   '0x7b7b63'
+    red:     '0xaf5f5f'
+    green:   '0x87875f'
+    yellow:  '0xaf875f'
+    blue:    '0x878787'
+    magenta: '0xaf8787'
+    cyan:    '0x87afaf'
+    white:   '0xdfdfaf'
+
+  indexed_colors:
+    - { index: 16, color: '0xaf875f' }
+    - { index: 17, color: '0x9b5f4b' }
+    - { index: 18, color: '0x272727' }
+    - { index: 19, color: '0x727272' }
+    - { index: 20, color: '0x030303' }
+    - { index: 21, color: '0xdfdfaf' }

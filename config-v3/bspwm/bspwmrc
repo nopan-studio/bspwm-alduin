@@ -1,5 +1,7 @@
 #! /bin/sh
 
+barriers --no-daemon --no-tray --name "void" --disable-crypto --disable-client-cert-checking -c ~/.config/barrier/barrier.conf &
+
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 pkill sxhkd 
@@ -20,10 +22,10 @@ bspc config remove_unplugged_monitors true
 
 }
 
-bspc config border_width    				0
-bspc config window_gap							1
-bspc config left_padding 						0
-bspc config right_padding 					0
+bspc config border_width    			0
+bspc config window_gap				1
+bspc config left_padding 			0
+bspc config right_padding 			0
 bspc config split_ratio          		0.50
 bspc config borderless_monocle   		false
 bspc config gapless_monocle      		false
@@ -80,6 +82,7 @@ bspc rule -a Zathura state=tiled
 
 #bspc subscribe desktop_layout | while read -r _ _ _ l; do case $l in monocle) picom-trans --reset;; tiled) pkill -SIGUSR1 picom;; esac; done
 
-spotifyd -b pulseaudio $
-wmname LG3D &
+
+
+#wmname LG3D &
 
